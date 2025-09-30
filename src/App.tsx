@@ -1,5 +1,6 @@
 import { MyContext } from "./Components/Context";
 import Home from "./Components/Home";
+import Gallery from "./Components/Gallery";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
           }}
         >
           <Home />
+          <Gallery />
         </MyContext.Provider>
       </div>
     </>
