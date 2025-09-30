@@ -108,29 +108,38 @@ function Gallerytwo() {
                         </motion.div>
                     ) : (
                         // Expanded Grid View
-                        <motion.div
-                            key="expanded"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-                        >
-                            {items.map((item) => (
-                                <div
-                                    key={item.id}
-                                    className="relative group overflow-hidden rounded-xl shadow-lg"
-                                >
-                                    <img
-                                        src={item.img}
-                                        alt={item.title}
-                                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 filter grayscale"
-                                    />
-                                    <h3 className="absolute inset-0 flex items-center justify-center text-lg font-bold">
-                                        {item.title}
-                                    </h3>
-                                </div>
-                            ))}
-                        </motion.div>
+                        <>
+                            <h2 className="flex justify-end gallerytext text-[48px] font-bold pb-[30px]">
+                                GALLERY
+                            </h2>
+                            <motion.div
+                                key="expanded"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+                            >
+                                {items.map((item) => (
+                                    <div
+                                        key={item.id}
+                                        className="relative group overflow-hidden rounded-xl shadow-lg"
+                                    >
+                                        <img
+                                            src={item.img}
+                                            alt={item.title}
+                                            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500 filter grayscale"
+                                        />
+                                        <h3 className="absolute inset-0 flex items-center justify-center text-lg font-bold">
+                                            {item.title}
+                                        </h3>
+                                        <div className="flex justify-center items-center flex-col pt-[16px]">
+                                            <p className="text-[#BABABA] text-[16px] font-light description">{item.text}</p>
+                                            <h4 className="text-white text-[24px] font-bold description">{item.title}</h4>
+                                        </div>
+                                    </div>
+                                ))}
+                            </motion.div>
+                        </>
                     )}
                 </AnimatePresence>
 
