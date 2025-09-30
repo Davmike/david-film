@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Gallery() {
     const [currentGallery, setCurrentGallery] = useState(0);
     const [isTransitioning, setIsTransitioning] = useState(false);
-    const [imageKey, setImageKey] = useState(0);
+    const [, setImageKey] = useState(0);
     const [expanded, setExpanded] = useState(false); // NEW
 
     const galleries = [
