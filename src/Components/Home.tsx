@@ -3,12 +3,20 @@ import { Menu } from 'lucide-react';
 function Home() {
     return (
         <div className="relative min-h-screen w-full overflow-hidden">
-            <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=1920')`,
-                }}
-            />
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+            >
+                <source
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4"
+                />
+            </video>
+
+            <div className="absolute inset-0 bg-black/30" />
 
             <div className="relative z-10 flex flex-col min-h-screen">
                 <header className="flex justify-between items-center p-6 md:p-8">
