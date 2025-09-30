@@ -42,7 +42,7 @@ function Home() {
                     <nav className="hidden md:flex md:items-center md:justify-center gap-8 bg-white/10 backdrop-blur-sm px-8 py-3 rounded-full absolute left-1/2 transform -translate-x-1/2">
                         <a
                             href="#home"
-                            className="text-white text-base font-bold hover:text-gray-300 transition-colors text-[24px]"
+                            className="text-white text-base hover:text-gray-300 transition-colors"
                         >
                             Home
                         </a>

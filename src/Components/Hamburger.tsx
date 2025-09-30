@@ -12,7 +12,7 @@ function Hamburger({ isOpen, onClose }: HamburgerProps) {
     const navItems = [
         { id: "home", label: "Home" },
         { id: "gallery", label: "Gallery" },
-        { id: "about", label: "About Me" },
+        { id: "about", label: "About" },
         { id: "contact", label: "Contact" },
     ];
 
