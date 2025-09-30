@@ -1,6 +1,7 @@
 import { MyContext } from "./Components/Context";
 import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
+import Gallerytwo from "./Components/Gallerytwo";
 
 function App() {
 
@@ -13,7 +14,12 @@ function App() {
           }}
         >
           <Home />
-          <Gallery />
+          <div className="block lg:hidden">
+            <Gallery />
+          </div>
+          <div className="hidden lg:block">
+            <Gallerytwo />
+          </div>
         </MyContext.Provider>
       </div>
     </>
