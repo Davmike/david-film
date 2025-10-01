@@ -46,7 +46,7 @@ function Pricing() {
 
     return (
         <div className="bg-black py-20 px-6 mt-[200px]">
-            <h2 className="text-white text-4xl font-light tracking-widest text-center mb-12 uppercase">
+            <h2 className="text-white text-4xl font-bold tracking-widest text-center mb-12 uppercase gallerytext text-[40px] sm:text-[40px] md:text-[48px]">
                 Pricing
             </h2>
 
@@ -56,7 +56,7 @@ function Pricing() {
                         key={idx}
                         className="bg-black border border-gray-700 rounded-2xl p-6 flex flex-col justify-between shadow-md"
                     >
-                        <div>
+                        <div className="description">
                             <h3 className="text-white text-xl font-medium mb-4">{plan.title}</h3>
                             <hr className="border-gray-700 mb-4" />
                             <p className="text-gray-300 mb-2 font-light">Services:</p>
@@ -68,7 +68,7 @@ function Pricing() {
                                 ))}
                             </ul>
                         </div>
-                        <div className="text-white text-2xl font-semibold tracking-widest text-center">
+                        <div className="text-white text-2xl font-semibold tracking-widest text-end">
                             {plan.price}
                         </div>
                     </div>
