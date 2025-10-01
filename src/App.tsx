@@ -4,6 +4,7 @@ import Gallery from "./Components/Gallery";
 import Gallerytwo from "./Components/Gallerytwo";
 import About from "./Components/About";
 import Service from "./Components/Service";
+import Testimonials from "./Components/Testimonials";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           </div>
           <About />
           <Service />
+          <Testimonials />
         </MyContext.Provider>
       </div>
     </>
