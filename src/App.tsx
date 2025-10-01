@@ -3,6 +3,9 @@ import Home from "./Components/Home";
 import Gallery from "./Components/Gallery";
 import Gallerytwo from "./Components/Gallerytwo";
 import About from "./Components/About";
+import Service from "./Components/Service";
+
+
 function App() {
 
 
@@ -21,6 +24,7 @@ function App() {
             <Gallerytwo />
           </div>
           <About />
+          <Service />
         </MyContext.Provider>
       </div>
     </>
