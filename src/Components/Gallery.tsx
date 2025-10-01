@@ -119,7 +119,7 @@ function Gallery() {
                                     <img
                                         src={gallery.images[2]}
                                         alt={gallery.title}
-                                        className="w-full max-w-xl object-cover rounded-md shadow-lg filter grayscale"
+                                        className="w-full max-w-xl h-48 object-cover rounded-md shadow-lg filter grayscale"
                                     />
                                     <h2 className="names text-2xl font-bold mt-4">{gallery.title}</h2>
                                     <p className="subtitl mt-2 text-lg font-light text-[#BABABA] whitespace-pre-line">{gallery.subtitle}</p>
