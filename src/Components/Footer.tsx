@@ -1,14 +1,16 @@
 import { Link } from "react-scroll";
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import logoimage from "../../public/assets/logo.png"
 
 function Footer() {
     return (
         <footer className="bg-black text-white px-6 py-10 mt-[150px]">
             <div className="max-w-7xl mx-auto">
                 {/* Top Section */}
-                <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                     {/* Logo */}
-                    <h1 className="text-5xl font-bold">DAVID</h1>
+                    {/* <h1 className="text-5xl font-bold">DAVID</h1> */}
+                    <img src={logoimage} className="w-[150px] h-[150px]" alt="" />
 
                     {/* Contacts */}
                     <div className="text-center md:text-left space-y-2 description">
