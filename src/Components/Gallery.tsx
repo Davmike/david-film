@@ -63,7 +63,7 @@ function Gallery() {
     const currentData = galleries[currentGallery];
 
     return (
-        <div className="min-h-screen bg-black text-white pt-[222px] pb-[150px] px-[24px] md:py-12 md:pt-[272px]">
+        <div className="min-h-screen bg-black text-white pt-[222px] pb-[150px] px-[24px] md:py-12 md:pt-[272px]" id='gallerypage'>
             {/* Header Section */}
             <div className="max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto">
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-8 md:mb-22 gap-[24px]">

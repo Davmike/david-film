@@ -1,19 +1,21 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 interface HamburgerProps {
     isOpen: boolean;
     onClose: () => void;
+    setIsMenuOpen: (value: boolean) => void;
 }
 
-function Hamburger({ isOpen, onClose }: HamburgerProps) {
+function Hamburger({ isOpen, onClose, setIsMenuOpen }: HamburgerProps) {
     const [activeLink, setActiveLink] = useState<string>("home"); // default = Home
 
     const navItems = [
-        { id: "home", label: "Home" },
-        { id: "gallery", label: "Gallery" },
-        { id: "about", label: "About" },
-        { id: "contact", label: "Contact" },
+        { id: "homepage", label: "Home" },
+        { id: "gallerypage", label: "Gallery" },
+        { id: "aboutpage", label: "About" },
+        { id: "servicepage", label: "Service" },
     ];
 
     return (
@@ -46,10 +48,14 @@ function Hamburger({ isOpen, onClose }: HamburgerProps) {
                     {/* Nav Links */}
                     <nav className="flex flex-col space-y-6">
                         {navItems.map((item) => (
-                            <a
+                            <Link
+                                to={item.id}
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
                                 key={item.id}
-                                href={`#${item.id}`}
-                                onClick={() => setActiveLink(item.id)}
+                                onClick={() => { setActiveLink(item.id); setIsMenuOpen(false); }}
                                 className={`text-white text-xl font-medium px-8 py-4 rounded-full text-center transition-colors
                   ${activeLink === item.id
                                         ? "bg-white/30" // აქტიური ბექგრაუნდი
@@ -57,12 +63,12 @@ function Hamburger({ isOpen, onClose }: HamburgerProps) {
                                     }`}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         ))}
                     </nav>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

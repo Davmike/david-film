@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { FaFacebookF, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 function Footer() {
@@ -52,10 +53,16 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                     <p>Copyright © 2025</p>
                     <a
-                        href="#top"
                         className="flex items-center space-x-1 mt-4 md:mt-0 hover:text-white transition"
                     >
-                        <span>Back To Top</span>
+                        <Link
+                            to={"homepage"}
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                            className="transition-colors duration-200 text-white/70 hover:text-white"
+                        >Back To Top</Link>
                         <span>↑</span>
                     </a>
                 </div>

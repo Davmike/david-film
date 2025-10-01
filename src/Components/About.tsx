@@ -1,6 +1,7 @@
 function About() {
     return (
         <div
+            id="aboutpage"
             className="min-h-screen bg-black text-white px-4 py-8 relative overflow-hidden"
             style={{
                 backgroundImage: `

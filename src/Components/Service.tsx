@@ -46,7 +46,7 @@ function Service() {
     ];
 
     return (
-        <div className="min-h-screen bg-black flex items-center justify-center p-8 pt-[250px]">
+        <div className="min-h-screen bg-black flex items-center justify-center p-8 pt-[250px]" id="servicepage">
             <div className="w-full max-w-5xl">
                 <h1 className="text-white tracking-widest text-center mb-12 uppercase gallerytext font-bold text-[40px] sm:text-[40px] md:text-[48px]">
                     Service
